@@ -1,0 +1,3 @@
+key1 - C:\path to\the\program64.exe
+phrase12 - P:\Program Files\bin\application.exe
+key3 - C:\file.exe
