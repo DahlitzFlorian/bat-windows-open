@@ -1,5 +1,7 @@
 @ECHO OFF
 
+set programsfile=%~dp0\programs.txt
+
 if "%1"=="-s" GOTO ShowKeys
 set params=
 set k=0
@@ -23,7 +25,7 @@ GOTO End
 
 :ShowKeys
 @ECHO ----------
-FOR /F "tokens=* delims= " %%i in (programs.txt) DO (
+FOR /F "tokens=* delims= " %%i in (%programsfile%) DO (
     set line=%%i
     call :processToken
     )
